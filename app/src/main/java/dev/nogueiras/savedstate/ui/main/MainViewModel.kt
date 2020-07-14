@@ -19,7 +19,7 @@ class MainViewModel(private val state: SavedStateHandle) : ViewModel() {
         _data.postValue(data)
     }
 
-    fun onPause(configuration: Scroll) {
+    fun onSaveInstanceState(configuration: Scroll) {
         state.set(CONFIGURATION_KEY, configuration)
     }
 

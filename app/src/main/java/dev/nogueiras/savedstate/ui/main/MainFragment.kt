@@ -38,7 +38,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         val configuration = Scroll(
             position = manager.findFirstVisibleItemPosition()
         )
-        viewModel.onPause(configuration)
+        viewModel.onSaveInstanceState(configuration)
         super.onSaveInstanceState(outState)
     }
 
